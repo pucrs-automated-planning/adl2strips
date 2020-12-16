@@ -1,0 +1,12 @@
+name: ADL 2 STRIPS
+on: [push]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Set up GCC
+          run: |
+            sudo apt install gcc
+        - name: Build
+          run: |
+            make
